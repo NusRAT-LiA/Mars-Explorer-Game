@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets/Rocks and Boulders 2/Shaders/RotateGameObject.cs" />
+     <Compile Include="Assets/Sci-Fi UI/Demo_Assets/scripts/GUI_Demo.cs" />
+     <Compile Include="Assets/Scripts/MassApiFetch.cs" />
      <None Include="Assets/Rocks and Boulders 2/Shaders/Blend SM2.shader" />
      <None Include="Assets/Rocks and Boulders 2/Shaders/Blend SM3.shader" />
      <None Include="Assets/Rocks and Boulders 2/Shaders/shader info.txt" />
