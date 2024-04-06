@@ -1,0 +1,5 @@
+# Ignore large files from Unity PackageCache
+Library/PackageCache/com.unity.burst@*/.Runtime/*.dll
+Library/PackageCache/com.unity.burst@*/.Runtime/*.so
+Library/PackageCache/com.unity.burst@*/.Runtime/*.dylib
+Library/Artifacts/*
