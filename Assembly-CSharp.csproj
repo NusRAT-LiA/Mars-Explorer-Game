@@ -42,31 +42,59 @@
   <ItemGroup>
      <Compile Include="Assets/Rocks and Boulders 2/Shaders/RotateGameObject.cs" />
      <Compile Include="Assets/Sci-Fi UI/Demo_Assets/scripts/GUI_Demo.cs" />
+     <Compile Include="Assets/Scripts/WeatherClient.cs" />
      <Compile Include="Assets/Scripts/MaasApiFetch.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
+     <None Include="Assets/Packages/System.Formats.Asn1.5.0.0/lib/netstandard2.0/System.Formats.Asn1.xml" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets/Packages/Microsoft.Extensions.ObjectPool.5.0.10/lib/netstandard2.0/Microsoft.Extensions.ObjectPool.xml" />
      <None Include="Assets/Rocks and Boulders 2/Shaders/Blend SM2.shader" />
+     <None Include="Assets/Packages/System.Formats.Asn1.5.0.0/useSharedDesignerContext.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
+     <None Include="Assets/Packages/System.Security.Cryptography.Pkcs.5.0.0/version.txt" />
+     <None Include="Assets/Packages/System.Security.Cryptography.Cng.5.0.0/useSharedDesignerContext.txt" />
+     <None Include="Assets/Packages/System.Security.Principal.Windows.5.0.0/lib/netstandard2.0/System.Security.Principal.Windows.xml" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
+     <None Include="Assets/Packages/Microsoft.Bcl.AsyncInterfaces.5.0.0/version.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets/Packages/Microsoft.Bcl.AsyncInterfaces.5.0.0/useSharedDesignerContext.txt" />
+     <None Include="Assets/Packages/System.Security.AccessControl.5.0.0/lib/netstandard2.0/System.Security.AccessControl.xml" />
      <None Include="Assets/Rocks and Boulders 2/Shaders/Blend SM3.shader" />
+     <None Include="Assets/Packages/System.Security.Cryptography.Pkcs.5.0.0/useSharedDesignerContext.txt" />
+     <None Include="Assets/Packages/NaCl.Net.0.1.13/lib/netstandard2.1/NaCl.xml" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
+     <None Include="Assets/Packages/System.Security.Permissions.5.0.0/useSharedDesignerContext.txt" />
      <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets/Packages/System.Security.Permissions.5.0.0/lib/netstandard2.0/System.Security.Permissions.xml" />
      <None Include="Assets/Rocks and Boulders 2/Shaders/shader info.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
+     <None Include="Assets/Packages/System.Security.Cryptography.Xml.5.0.0/lib/netstandard2.0/System.Security.Cryptography.Xml.xml" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
+     <None Include="Assets/Packages/System.Security.Permissions.5.0.0/version.txt" />
+     <None Include="Assets/Packages/System.Security.Cryptography.Xml.5.0.0/useSharedDesignerContext.txt" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
+     <None Include="Assets/Packages/System.Security.Principal.Windows.5.0.0/version.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets/Packages/Microsoft.Bcl.AsyncInterfaces.5.0.0/lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml" />
+     <None Include="Assets/Packages/System.Security.AccessControl.5.0.0/useSharedDesignerContext.txt" />
+     <None Include="Assets/Packages/NetMQ.4.0.1.13/lib/netstandard2.1/NetMQ.xml" />
+     <None Include="Assets/Packages/System.Security.Principal.Windows.5.0.0/useSharedDesignerContext.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
+     <None Include="Assets/Packages/System.Security.Cryptography.Xml.5.0.0/version.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets/Packages/System.Security.Cryptography.Pkcs.5.0.0/lib/netstandard2.1/System.Security.Cryptography.Pkcs.xml" />
+     <None Include="Assets/Packages/System.Security.Cryptography.Cng.5.0.0/version.txt" />
      <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
+     <None Include="Assets/Packages/System.Security.Cryptography.Cng.5.0.0/lib/netstandard2.1/System.Security.Cryptography.Cng.xml" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
+     <None Include="Assets/Packages/System.Security.AccessControl.5.0.0/version.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
+     <None Include="Assets/Packages/System.Formats.Asn1.5.0.0/version.txt" />
     <Reference Include="UnityEngine">
         <HintPath>/home/lia/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -313,11 +341,56 @@
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>/home/lia/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Extensions.ObjectPool">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Assets/Packages/Microsoft.Extensions.ObjectPool.5.0.10/lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll</HintPath>
+    </Reference>
     <Reference Include="ReportGeneratorMerged">
         <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
     </Reference>
+    <Reference Include="AsyncIO">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Assets/Packages/AsyncIO.0.1.69/lib/netstandard2.0/AsyncIO.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Assets/Packages/Microsoft.Bcl.AsyncInterfaces.5.0.0/lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
         <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="NetMQ">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Assets/Packages/NetMQ.4.0.1.13/lib/netstandard2.1/NetMQ.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Primitives">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Assets/Packages/System.ServiceModel.Primitives.4.9.0/lib/netstandard2.0/System.ServiceModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Assets/Packages/System.Security.Principal.Windows.5.0.0/lib/netstandard2.0/System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Xml">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Assets/Packages/System.Security.Cryptography.Xml.5.0.0/lib/netstandard2.0/System.Security.Cryptography.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.AccessControl">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Assets/Packages/System.Security.AccessControl.5.0.0/lib/netstandard2.0/System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="NaCl">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Assets/Packages/NaCl.Net.0.1.13/lib/netstandard2.1/NaCl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Assets/Packages/System.ServiceModel.Primitives.4.9.0/lib/netstandard2.0/System.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Formats.Asn1">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Assets/Packages/System.Formats.Asn1.5.0.0/lib/netstandard2.0/System.Formats.Asn1.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Private.ServiceModel">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Assets/Packages/System.Private.ServiceModel.4.9.0/lib/netstandard2.0/System.Private.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Pkcs">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Assets/Packages/System.Security.Cryptography.Pkcs.5.0.0/lib/netstandard2.1/System.Security.Cryptography.Pkcs.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Cng">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Assets/Packages/System.Security.Cryptography.Cng.5.0.0/lib/netstandard2.1/System.Security.Cryptography.Cng.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Assets/Packages/System.Security.Permissions.5.0.0/lib/netstandard2.0/System.Security.Permissions.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>/home/lia/Unity/Hub/Editor/2022.3.8f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll</HintPath>

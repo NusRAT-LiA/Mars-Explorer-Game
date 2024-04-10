@@ -4,7 +4,6 @@ import os
 from datetime import datetime
 from models import ModelWithScaler
 
-# Define the function to predict future weather based on the model and future date
 def predict_future_weather(model_with_scaler, future_date):
     future_year = future_date.year
     future_month = future_date.month
