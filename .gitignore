@@ -2,4 +2,9 @@
 Library/
 Logs/
 UserSettings/
+ProjectSettings/
+*.meta
+obj/
+.vscode/
+Temp/
 Martian-weather-prediction-server/config.py
