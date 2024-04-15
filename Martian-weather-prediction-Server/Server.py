@@ -19,7 +19,7 @@ socket = context.socket(zmq.REP)
 socket.bind("tcp://*:5555")
 
 # List of columns to predict
-columns_to_predict = ["min_temp", "max_temp", "pressure"]
+columns_to_predict = ['min_temp', 'max_temp', 'pressure','uv_index_encoded','min_gts_temp','max_gts_temp']
 
 # Directory where models are stored
 models_dir = os.path.dirname(__file__)  

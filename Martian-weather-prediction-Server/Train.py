@@ -102,7 +102,7 @@ prepared_data = preprocess_data(prepared_data)
 
 # Select features and target columns
 X = prepared_data[['year', 'month', 'day']]
-y = prepared_data[['min_temp', 'max_temp', 'pressure']]
+y = prepared_data[['min_temp', 'max_temp', 'pressure','uv_index_encoded','min_gts_temp','max_gts_temp']]
 
 # Train models
 trained_models = train_models(X, y)
