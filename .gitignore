@@ -2,5 +2,4 @@
 Library/
 Logs/
 UserSettings/
-Assembly-CSharp.csproj
-Assets/Martian-weather-prediction-server/config.py
+Martian-weather-prediction-server/config.py
