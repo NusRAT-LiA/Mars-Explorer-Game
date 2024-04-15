@@ -4,6 +4,7 @@ using NetMQ.Sockets;
 using System.Threading.Tasks;
 using UnityEngine.UI;
 using AsyncIO;
+using System;
 
 public class WeatherClient : MonoBehaviour
 {
@@ -52,8 +53,42 @@ public class WeatherClient : MonoBehaviour
 
     void UpdatePredictionUI(Data data)
     {
-        // Update UI with the received prediction data
-        predictionText.text = $"Min Temp: {data.min_temp}\nMax Temp: {data.max_temp}\nPressure: {data.pressure}";
+        // Truncate uv_index_encoded to its integer part
+        int truncatedUVIndex = Mathf.FloorToInt(data.uv_index_encoded);
+        string uvIndex;
+
+        switch (truncatedUVIndex)
+        {
+          case 0:
+            uvIndex = "Low";
+            break;
+          case 1:
+            uvIndex = "Moderate";
+            break;
+          case 2:
+            uvIndex = "High";
+            break;
+          case 3:
+            uvIndex = "Very High";
+            break;
+          default:
+            uvIndex = "Unknown";
+            break;
+        }
+   
+        
+        // Define units for each data field
+        string TempUnit = "°C";
+        string pressureUnit = "Pa";
+        DateTime today = DateTime.Today;
+        // Update UI with the received prediction data and units
+        predictionText.text = $"Date:" + today.ToString("yyyy-MM-dd")+"\n\n" +
+                              $"Min Temp: {data.min_temp:F2}{TempUnit}\n" +
+                              $"Max Temp: {data.max_temp:F2}{TempUnit}\n" +
+                              $"Pressure: {data.pressure:F2}{pressureUnit}\n" +
+                              $"UV Index: {uvIndex}\n" +
+                              $"Min GTS Temp: {data.min_gts_temp:F2}{TempUnit}\n" +
+                              $"Max GTS Temp: {data.max_gts_temp:F2}{TempUnit}";
     }
 }
 
@@ -63,4 +98,7 @@ public class Data
     public float min_temp;
     public float max_temp;
     public float pressure;
+    public float uv_index_encoded;
+    public float min_gts_temp;
+    public float max_gts_temp;
 }

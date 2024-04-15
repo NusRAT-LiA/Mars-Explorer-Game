@@ -3,6 +3,12 @@ import joblib
 import os
 from datetime import datetime
 from models import ModelWithScaler
+import subprocess
+
+# Function to execute the training process
+def train_model():
+    # Assuming your training script is named train.py and located in the same directory
+    subprocess.run(["python3", "/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Martian-weather-prediction-Server/Train.py"])
 
 def predict_future_weather(model_with_scaler, future_date):
     future_year = future_date.year
@@ -24,6 +30,8 @@ columns_to_predict = ['min_temp', 'max_temp', 'pressure','uv_index_encoded','min
 # Directory where models are stored
 models_dir = os.path.dirname(__file__)  
 
+# Train the model before starting the server
+# train_model()
 
 while True:
     print("Server Running\n")
