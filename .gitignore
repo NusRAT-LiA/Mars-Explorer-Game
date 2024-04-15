@@ -1,6 +1,6 @@
 # Ignore large files from Unity PackageCache
-Library/PackageCache/com.unity.burst@*/.Runtime/*.dll
-Library/PackageCache/com.unity.burst@*/.Runtime/*.so
-Library/PackageCache/com.unity.burst@*/.Runtime/*.dylib
-Library/Artifacts/*
-config.py
+Library/
+Logs/
+UserSettings/
+Assembly-CSharp.csproj
+Assets/Martian-weather-prediction-server/config.py
