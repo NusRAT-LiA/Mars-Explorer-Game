@@ -42,6 +42,7 @@
   <ItemGroup>
      <Compile Include="Assets/Rocks and Boulders 2/Shaders/RotateGameObject.cs" />
      <Compile Include="Assets/Scripts/WeatherClient.cs" />
+     <None Include="Assets/TerrainSampleAssets/ThirdPartyNotices.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/Packages/System.Formats.Asn1.5.0.0/lib/netstandard2.0/System.Formats.Asn1.xml" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
@@ -91,6 +92,7 @@
      <None Include="Assets/Packages/System.Security.Cryptography.Cng.5.0.0/lib/netstandard2.1/System.Security.Cryptography.Cng.xml" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
      <None Include="Assets/Packages/System.Security.AccessControl.5.0.0/version.txt" />
+     <None Include="Assets/TerrainSampleAssets/ShaderGraphs/CustomFunctions/CustomLighting.hlsl" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
      <None Include="Assets/Packages/System.Formats.Asn1.5.0.0/version.txt" />
     <Reference Include="UnityEngine">
@@ -771,6 +773,9 @@
     <Reference Include="Unity.TerrainTools.Editor">
         <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/ScriptAssemblies/Unity.TerrainTools.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Burst.Editor">
         <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
     </Reference>
@@ -825,6 +830,9 @@
     <Reference Include="Unity.Mathematics.Editor">
         <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
@@ -852,6 +860,9 @@
     <Reference Include="Unity.VisualScripting.State.Editor">
         <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="PPv2URPConverters">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/ScriptAssemblies/PPv2URPConverters.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Mathematics">
         <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
@@ -864,6 +875,9 @@
     <Reference Include="Unity.Searcher.Editor">
         <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.State">
         <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
     </Reference>
@@ -872,6 +886,9 @@
     </Reference>
     <Reference Include="Unity.RenderPipelines.HighDefinition.Runtime">
         <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/ScriptAssemblies/Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.HighDefinition.Editor">
         <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/ScriptAssemblies/Unity.RenderPipelines.HighDefinition.Editor.dll</HintPath>
