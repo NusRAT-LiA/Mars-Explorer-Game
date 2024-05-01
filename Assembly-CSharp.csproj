@@ -41,7 +41,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets/Rocks and Boulders 2/Shaders/RotateGameObject.cs" />
-     <Compile Include="Assets/Sci-Fi UI/Demo_Assets/scripts/GUI_Demo.cs" />
      <Compile Include="Assets/Scripts/WeatherClient.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/Packages/System.Formats.Asn1.5.0.0/lib/netstandard2.0/System.Formats.Asn1.xml" />
@@ -769,6 +768,9 @@
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
         <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TerrainTools.Editor">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/ScriptAssemblies/Unity.TerrainTools.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Burst.Editor">
         <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
     </Reference>
@@ -783,6 +785,9 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
         <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TerrainTools">
+        <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
         <HintPath>/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
