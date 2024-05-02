@@ -50,6 +50,7 @@
      <None Include="Assets/Rocks and Boulders 2/Shaders/Blend SM2.shader" />
      <None Include="Assets/Packages/System.Formats.Asn1.5.0.0/useSharedDesignerContext.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
+     <None Include="Assets/ScannedRocks/BonusShaders/Old/SnowOnRockShader.shader" />
      <None Include="Assets/Packages/System.Security.Cryptography.Pkcs.5.0.0/version.txt" />
      <None Include="Assets/Packages/System.Security.Cryptography.Cng.5.0.0/useSharedDesignerContext.txt" />
      <None Include="Assets/Packages/System.Security.Principal.Windows.5.0.0/lib/netstandard2.0/System.Security.Principal.Windows.xml" />
@@ -77,6 +78,7 @@
      <None Include="Assets/Packages/System.Security.Permissions.5.0.0/version.txt" />
      <None Include="Assets/Packages/System.Security.Cryptography.Xml.5.0.0/useSharedDesignerContext.txt" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
+     <None Include="Assets/ScannedRocks/BonusShaders/New/OnTheTopShader.shader" />
      <None Include="Assets/Packages/System.Security.Principal.Windows.5.0.0/version.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets/Packages/Microsoft.Bcl.AsyncInterfaces.5.0.0/lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml" />
