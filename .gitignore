@@ -4,6 +4,6 @@ Logs/
 UserSettings/
 ProjectSettings/
 obj/
-.vscode/git
+.vscode/
 Temp/
 Martian-weather-prediction-server/config.py
