@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2300000}
   - component: {fileID: 64000013104230458}
   m_Layer: 0
-  m_Name: Rock2
+  m_Name: Dacite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fecb386fe3f6b3d4ab7955c62f3114aa, type: 2}
+  - {fileID: 2100000, guid: 57023e46333f6fc4cad139942bbc4b39, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
