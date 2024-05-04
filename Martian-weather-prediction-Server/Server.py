@@ -6,9 +6,8 @@ from models import ModelWithScaler
 import subprocess
 
 # Function to execute the training process
-def train_model():
-    # Assuming your training script is named train.py and located in the same directory
-    subprocess.run(["python3", "/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Martian-weather-prediction-Server/Train.py"])
+# def train_model():
+#     subprocess.run(["python3", "/home/lia/Desktop/UnityProjects/Mars-Explorer-Game/Martian-weather-prediction-Server/Train.py"])
 
 def predict_future_weather(model_with_scaler, future_date):
     future_year = future_date.year
@@ -35,17 +34,14 @@ models_dir = os.path.dirname(__file__)
 
 while True:
     print("Server Running\n")
-    # Receive a request from the client
     request = socket.recv_string()
     predictions = {}
-    # Process the request
     if request == "predict":
-        future_date = datetime.now()  # Example future date, replace this with client-provided date
+        future_date = datetime.now()  
         for column in columns_to_predict:
             model_file_path = os.path.join(models_dir, f'{column}_model_with_scaler.h5')
             model_with_scaler = joblib.load(model_file_path)
             future_weather = predict_future_weather(model_with_scaler, future_date)
             predictions[column] = future_weather
 
-        # Send the predictions back to the client
         socket.send_json(predictions)
