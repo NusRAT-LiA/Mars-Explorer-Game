@@ -9,7 +9,6 @@ using System;
 public class WeatherClient : MonoBehaviour
 {
     private RequestSocket clientSocket;
-    private bool requestSent = false; // Flag to track whether request has been sent
     public TMPro.TextMeshProUGUI predictionText; // Reference to your UI Text element
 
     async void Start()
@@ -35,12 +34,8 @@ public class WeatherClient : MonoBehaviour
     {
         while (true)
         {
-            // Send a request to the server only if the request has not been sent yet
-            if (!requestSent)
-            {
-                clientSocket.SendFrame("predict");
-                requestSent = true; // Set flag to true indicating request has been sent
-            }
+            // Send a request to the server
+            clientSocket.SendFrame("predict");
 
             // Receive the prediction data from the server asynchronously
             string message = await Task.Run(() => clientSocket.ReceiveFrameString());
@@ -48,6 +43,9 @@ public class WeatherClient : MonoBehaviour
 
             // Update UI with the received prediction data
             UpdatePredictionUI(data);
+
+            // Wait for a while before sending the next request
+            await Task.Delay(5000); // Adjust the delay time as needed
         }
     }
 
@@ -59,30 +57,29 @@ public class WeatherClient : MonoBehaviour
 
         switch (truncatedUVIndex)
         {
-          case 0:
-            uvIndex = "Low";
-            break;
-          case 1:
-            uvIndex = "Moderate";
-            break;
-          case 2:
-            uvIndex = "High";
-            break;
-          case 3:
-            uvIndex = "Very High";
-            break;
-          default:
-            uvIndex = "Unknown";
-            break;
+            case 0:
+                uvIndex = "Low";
+                break;
+            case 1:
+                uvIndex = "Moderate";
+                break;
+            case 2:
+                uvIndex = "High";
+                break;
+            case 3:
+                uvIndex = "Very High";
+                break;
+            default:
+                uvIndex = "Unknown";
+                break;
         }
-   
-        
+
         // Define units for each data field
         string TempUnit = "°C";
         string pressureUnit = "Pa";
         DateTime today = DateTime.Today;
         // Update UI with the received prediction data and units
-        predictionText.text = $"Date:" + today.ToString("yyyy-MM-dd")+"\n\n" +
+        predictionText.text = $"Date:" + today.ToString("yyyy-MM-dd") + "\n\n" +
                               $"Min Temp: {data.min_temp:F2}{TempUnit}\n" +
                               $"Max Temp: {data.max_temp:F2}{TempUnit}\n" +
                               $"Pressure: {data.pressure:F2}{pressureUnit}\n" +

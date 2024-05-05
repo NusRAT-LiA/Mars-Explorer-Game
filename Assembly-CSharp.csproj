@@ -41,16 +41,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets/Rocks and Boulders 2/Shaders/RotateGameObject.cs" />
-     <Compile Include="Assets/Main/Mobile/Scripts/Utilities/MobileDisableAutoSwitchControls.cs" />
-     <Compile Include="Assets/Main/TutorialInfo/Scripts/Readme.cs" />
-     <Compile Include="Assets/Main/FirstPersonController/Scripts/FirstPersonController.cs" />
-     <Compile Include="Assets/Main/Mobile/Scripts/VirtualInputs/UIVirtualJoystick.cs" />
-     <Compile Include="Assets/Main/Mobile/Scripts/VirtualInputs/UIVirtualButton.cs" />
+     <Compile Include="Assets/Main/Scripts/PlayerController.cs" />
+     <Compile Include="Assets/Main/Settings/Input/PlayerInput.cs" />
      <Compile Include="Assets/Scripts/WeatherClient.cs" />
-     <Compile Include="Assets/Main/FirstPersonController/Scripts/BasicRigidBodyPush.cs" />
-     <Compile Include="Assets/Main/Mobile/Scripts/CanvasInputs/UICanvasControllerInput.cs" />
-     <Compile Include="Assets/Main/InputSystem/StarterAssetsInputs.cs" />
-     <Compile Include="Assets/Main/Mobile/Scripts/VirtualInputs/UIVirtualTouchZone.cs" />
+     <Compile Include="Assets/Main/Scripts/Actor.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/Packages/System.Formats.Asn1.5.0.0/lib/netstandard2.0/System.Formats.Asn1.xml" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
@@ -79,7 +73,6 @@
      <None Include="Assets/Rocks and Boulders 2/Shaders/shader info.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
      <None Include="Assets/Packages/System.Security.Cryptography.Xml.5.0.0/lib/netstandard2.0/System.Security.Cryptography.Xml.xml" />
-     <None Include="Assets/Main/license.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
