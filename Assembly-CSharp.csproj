@@ -41,7 +41,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets/Rocks and Boulders 2/Shaders/RotateGameObject.cs" />
+     <Compile Include="Assets/Sci-Fi UI/Demo_Assets/scripts/GUI_Demo.cs" />
      <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Misc/ExtraLinks.cs" />
+     <Compile Include="Assets/Scripts/PuzzleManager.cs" />
      <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Audio/CheckSFXVolume.cs" />
      <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/ThemeEditor/ThemedUI.cs" />
      <Compile Include="Assets/Main/Scripts/PlayerController.cs" />
