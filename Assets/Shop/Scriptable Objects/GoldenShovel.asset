@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Golden Shovel
   description: Hit - 2
+  speed: 2
+  jumpForce: 0
+  type: Shovel
+  itemImage: {fileID: 0}
   baseCost: 25

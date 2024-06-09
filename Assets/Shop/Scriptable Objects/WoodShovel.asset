@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Wooden Sovel
   description: Hit - 5
+  speed: 5
+  jumpForce: 0
+  type: Shovel
+  itemImage: {fileID: 0}
   baseCost: 5

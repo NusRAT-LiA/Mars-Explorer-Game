@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Sky Blue Shovel
   description: Hit -1
+  speed: 1
+  jumpForce: 0
+  type: Shovel
+  itemImage: {fileID: 0}
   baseCost: 30

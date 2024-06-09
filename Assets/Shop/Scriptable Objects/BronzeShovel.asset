@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Bronze Shovel
   description: Hit - 4
+  speed: 4
+  jumpForce: 0
+  type: Shovel
+  itemImage: {fileID: 0}
   baseCost: 10

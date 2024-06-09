@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Green Suit
   description: Speed - 20x; JumpForce - 6
+  speed: 20
+  jumpForce: 6
+  type: Suit
+  itemImage: {fileID: 0}
   baseCost: 20

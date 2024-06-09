@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     AudioSource audioSource;
 
     [Header("Controller")]
-    public float moveSpeed = 5;
+    public int moveSpeed = 5;
     public float gravity = -9.8f;
     public float jumpHeight = 1.2f;
 

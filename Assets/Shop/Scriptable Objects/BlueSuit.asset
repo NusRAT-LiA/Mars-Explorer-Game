@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Blue Suit
   description: Speed -10x; JumpForce - 3
+  speed: 10
+  jumpForce: 3
+  type: Suit
   itemImage: {fileID: 21300000, guid: 1c20e7935beca6b4d94e1850bcc947cb, type: 3}
   baseCost: 15
