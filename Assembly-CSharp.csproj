@@ -41,21 +41,26 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets/Rocks and Boulders 2/Shaders/RotateGameObject.cs" />
+     <Compile Include="Assets/Assets/Scripts/Actor.cs" />
+     <Compile Include="Assets/Assets/Scripts/PlayerController.cs" />
      <Compile Include="Assets/Sci-Fi UI/Demo_Assets/scripts/GUI_Demo.cs" />
      <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Misc/ExtraLinks.cs" />
      <Compile Include="Assets/Scripts/PuzzleManager.cs" />
      <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Audio/CheckSFXVolume.cs" />
      <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/ThemeEditor/ThemedUI.cs" />
-     <Compile Include="Assets/Main/Scripts/PlayerController.cs" />
+     <Compile Include="Assets/Assets/Settings/Input/PlayerInput.cs" />
+     <Compile Include="Assets/Shop/Scripts/CursorController.cs" />
      <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Managers/UIMenuManager.cs" />
      <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Misc/ResetDemo.cs" />
      <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/ThemeEditor/ThemedUIElement.cs" />
-     <Compile Include="Assets/Main/Settings/Input/PlayerInput.cs" />
      <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Managers/UISettingsManager.cs" />
+     <Compile Include="Assets/Shop/Scripts/ShopItemSO.cs" />
      <Compile Include="Assets/Scripts/WeatherClient.cs" />
      <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/ThemeEditor/ThemedUIData.cs" />
      <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Audio/CheckMusicVolume.cs" />
-     <Compile Include="Assets/Main/Scripts/Actor.cs" />
+     <Compile Include="Assets/Shop/Scripts/ShopManager.cs" />
+     <Compile Include="Assets/Shop/Scripts/ShopTemplate.cs" />
+     <Compile Include="Assets/Shop/Scripts/ToggleStore.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/Packages/System.Formats.Asn1.5.0.0/lib/netstandard2.0/System.Formats.Asn1.xml" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
