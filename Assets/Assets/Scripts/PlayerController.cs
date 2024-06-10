@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     AudioSource audioSource;
 
     [Header("Controller")]
-    public int moveSpeed = 5;
+    public float moveSpeed = 5;
     public float gravity = -9.8f;
     public float jumpHeight = 1.2f;
 
@@ -37,8 +37,8 @@ public class PlayerController : MonoBehaviour
         input = playerInput.Main;
         AssignInputs();
 
-        // Cursor.lockState = CursorLockMode.Locked;
-        // Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     void Update()
