@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SilverShovel
   m_EditorClassIdentifier: 
   title: Silver Shovel
+  name: Silver
   description: Hit - 3
   speed: 3
   jumpForce: 0

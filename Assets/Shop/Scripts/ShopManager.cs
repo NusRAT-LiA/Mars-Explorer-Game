@@ -15,6 +15,8 @@ public class ShopManager : MonoBehaviour
     private TextMeshProUGUI buttonText;
     public PlayerController playerController;
 
+    public ShovelController shovelController;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -71,6 +73,7 @@ public class ShopManager : MonoBehaviour
             }
             else if(shopItemSO[btnNo].type == "Shovel"){
                 Debug.Log(shopItemSO[btnNo].speed);
+                shovelController.ActivateChildGameObjectByName(shopItemSO[btnNo].name);
             }
         }
 
