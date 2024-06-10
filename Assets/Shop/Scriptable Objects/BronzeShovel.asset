@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: BronzeShovel
   m_EditorClassIdentifier: 
   title: Bronze Shovel
+  name: Bronze
   description: Hit - 4
   speed: 4
   jumpForce: 0

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GoldenShovel
   m_EditorClassIdentifier: 
   title: Golden Shovel
+  name: Golden
   description: Hit - 2
   speed: 2
   jumpForce: 0

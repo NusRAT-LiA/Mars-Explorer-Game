@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
-    private CharacterController _characterController;
-
     public Inventory inventory;
     // public GameObject dropPoint;
     public HUD Hud;
@@ -14,15 +12,15 @@ public class PlayerControl : MonoBehaviour
 
     void Start()
     {
-        _characterController = GetComponent<CharacterController>();
         inventory.ItemUsed += Inventory_ItemUsed;
     }
 
     void Update(){
-        if(mItemToPickup!=null && Input.GetKeyDown(KeyCode.H)){
+        if(mItemToPickup!=null){
             Debug.Log("JJ");
             inventory.AddItem(mItemToPickup);
-            mItemToPickup.OnPickup();
+            mItemToPickup = null;
+            // mItemToPickup.OnPickup();
             Hud.CloseMessagePanel();
         }
     }
@@ -37,24 +35,15 @@ public class PlayerControl : MonoBehaviour
     }
 
     private IInventoryItem mItemToPickup = null;
-    private void OnTriggerEnter(Collider other) {
+    public void StoreItemIntoInventory(GameObject rock) {
         Debug.Log("Hello");
-        IInventoryItem item = other.GetComponent<IInventoryItem>();
+        IInventoryItem item = rock.GetComponent<IInventoryItem>();
         
         if (item != null)
         {
+            Debug.Log(item.Name);
             mItemToPickup = item;
-            Hud.OpenMessagePanel("");
-        }
-    }
-
-    private void OnTriggerExit(Collider other) {
-        IInventoryItem item = other.GetComponent<IInventoryItem>();
-        
-        if (item != null)
-        {
-            Hud.CloseMessagePanel();
-            mItemToPickup = null;
+            // Hud.OpenMessagePanel("");
         }
     }
 }

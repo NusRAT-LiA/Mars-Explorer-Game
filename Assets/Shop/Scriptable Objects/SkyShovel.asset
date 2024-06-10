@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SkyShovel
   m_EditorClassIdentifier: 
   title: Sky Blue Shovel
+  name: Sky
   description: Hit -1
   speed: 1
   jumpForce: 0
