@@ -668,7 +668,7 @@ Transform:
   m_GameObject: {fileID: 534314460}
   serializedVersion: 2
   m_LocalRotation: {x: -0.044102244, y: 0.015931945, z: 0.0007034084, w: 0.99889976}
-  m_LocalPosition: {x: -0.145, y: 0.581, z: -0.046}
+  m_LocalPosition: {x: -0.146, y: 0.578, z: -0.081}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1161,17 +1161,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c0093a41c6e486543ae98bb8975aa84e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c0093a41c6e486543ae98bb8975aa84e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c0093a41c6e486543ae98bb8975aa84e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.093
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c0093a41c6e486543ae98bb8975aa84e,
         type: 3}
@@ -1374,14 +1374,14 @@ MonoBehaviour:
   gravity: -9.8
   jumpHeight: 1.2
   cam: {fileID: 534314463}
-  sensitivity: 0
+  sensitivity: 15
   attackDistance: 3
   attackDelay: 0.4
   attackSpeed: 1
   attackDamage: 1
   attackLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   hitEffect: {fileID: 5334228485563152753, guid: 0134bdc80242c974b88f68d7bb298ed9,
     type: 3}
   swordSwing: {fileID: 8300000, guid: 7923190c5e80b4d4d9396acc5d0b48cf, type: 3}
