@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 5
-  playerController: {fileID: 0}
+  playerController: {fileID: 524029209791395963, guid: c64494b2e37f4fc44bcd8b7f120f723b, type: 3}
 --- !u!114 &2358785163031100344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87823b3c1df1f664f885b11f0d5b2521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Image: {fileID: 21300000, guid: 3d42b5ef33689af43a3e6dccb8b02805, type: 3}
+  _Image: {fileID: 21300000, guid: 10f80eac896607c39b2bccde00ff3c91, type: 3}
 --- !u!1 &255113741538137401
 GameObject:
   m_ObjectHideFlags: 0

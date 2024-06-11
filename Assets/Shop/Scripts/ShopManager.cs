@@ -122,4 +122,14 @@ public class ShopManager : MonoBehaviour
             }
         }
     }
+
+    private void OnApplicationQuit()
+    {
+        PlayerPrefs.DeleteKey("Coins");
+        for (int i = 0; i < myPurchaseButton.Length; i++)
+        {
+            PlayerPrefs.DeleteKey("Button" + i);
+        }
+        PlayerPrefs.Save();
+    }
 }

@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
   - component: {fileID: 6500000}
+  - component: {fileID: -7946139948493847487}
+  - component: {fileID: -8068227227513526495}
   m_Layer: 0
   m_Name: SedimentaryRock
   m_TagString: Untagged
@@ -106,6 +108,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.15, y: 1.55, z: 2.3}
   m_Center: {x: 0.009681463, y: 0.021104664, z: -0.30547738}
+--- !u!114 &-7946139948493847487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 642a903da73842c49ac2d4e560f7e4cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Image: {fileID: 21300000, guid: 2c2649ba8d3b6c27aa9c0a76dac7a4b0, type: 3}
+--- !u!114 &-8068227227513526495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cd3daaa63586a4e9eeb29c8eff8ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  playerController: {fileID: 524029209791395963, guid: c64494b2e37f4fc44bcd8b7f120f723b, type: 3}
 --- !u!1 &629057519421662406
 GameObject:
   m_ObjectHideFlags: 0

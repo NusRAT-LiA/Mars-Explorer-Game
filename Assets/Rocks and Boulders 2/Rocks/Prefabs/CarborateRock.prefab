@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
   - component: {fileID: 6400000}
+  - component: {fileID: -3886273542481259023}
+  - component: {fileID: -1976524855413485179}
   m_Layer: 0
   m_Name: CarborateRock
   m_TagString: Untagged
@@ -109,6 +111,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: d11d8096e6b14aa43aa74d862d2d01f7, type: 3}
+--- !u!114 &-3886273542481259023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cd3daaa63586a4e9eeb29c8eff8ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  playerController: {fileID: 524029209791395963, guid: c64494b2e37f4fc44bcd8b7f120f723b, type: 3}
+--- !u!114 &-1976524855413485179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1299d7f18655f324d8511c7fd83ddd11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Image: {fileID: 21300000, guid: af0e83e1bb7226d8993e20441b086039, type: 3}
 --- !u!1 &322670342718092791
 GameObject:
   m_ObjectHideFlags: 0
@@ -1488,7 +1517,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5332912889938231640}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0045903544, y: 0.15406302, z: -0.014389807, w: -0.9879456}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 514.99054, y: 216.77336, z: 163.60564}
   m_LocalScale: {x: 0.6875247, y: 0.6875247, z: 0.6875247}
   m_ConstrainProportionsScale: 0
@@ -1533,7 +1562,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5441622802723912490}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.5208878, y: 0.1623099, z: -0.17467916, w: -0.81964546}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.011634165, y: -0.16042875, z: -0.040868144}
   m_LocalScale: {x: 0.6875247, y: 0.68752474, z: 0.6875247}
   m_ConstrainProportionsScale: 0
@@ -1775,7 +1804,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5960909378132807585}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0045903544, y: 0.15406302, z: -0.014389807, w: -0.9879456}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 514.99054, y: 216.77336, z: 163.60564}
   m_LocalScale: {x: 0.6875247, y: 0.6875247, z: 0.6875247}
   m_ConstrainProportionsScale: 0
