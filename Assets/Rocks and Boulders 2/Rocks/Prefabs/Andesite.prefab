@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
   - component: {fileID: 6500000}
+  - component: {fileID: 9128767174229587139}
+  - component: {fileID: 6815261987454752817}
   m_Layer: 0
   m_Name: Andesite
   m_TagString: Untagged
@@ -106,6 +108,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.52, y: 1.14, z: 2.1}
   m_Center: {x: -0.064275384, y: -0.06345254, z: -0.21927375}
+--- !u!114 &9128767174229587139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7352b3fd24332db41a5430f9627b533d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Image: {fileID: 21300000, guid: 9ddfcb3e540b40e488e2e119305fd296, type: 3}
+--- !u!114 &6815261987454752817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cd3daaa63586a4e9eeb29c8eff8ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  playerController: {fileID: 524029209791395963, guid: c64494b2e37f4fc44bcd8b7f120f723b, type: 3}
 --- !u!1 &174819316490968359
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
   - component: {fileID: 6400000}
+  - component: {fileID: 8187361037540124876}
+  - component: {fileID: 3901644598219189301}
   m_Layer: 0
   m_Name: Humphery
   m_TagString: Untagged
@@ -107,6 +109,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 1e3f5eee0b7e2a54195a2a32bf7fcf20, type: 3}
+--- !u!114 &8187361037540124876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 642a903da73842c49ac2d4e560f7e4cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Image: {fileID: 21300000, guid: 02cc6de6eb85fabd7b9e728b468665e4, type: 3}
+--- !u!114 &3901644598219189301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cd3daaa63586a4e9eeb29c8eff8ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  playerController: {fileID: 524029209791395963, guid: c64494b2e37f4fc44bcd8b7f120f723b, type: 3}
 --- !u!1 &458326541093476685
 GameObject:
   m_ObjectHideFlags: 0

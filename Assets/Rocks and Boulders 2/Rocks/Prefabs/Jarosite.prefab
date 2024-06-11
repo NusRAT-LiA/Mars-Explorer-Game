@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
   - component: {fileID: 6400000}
+  - component: {fileID: 5876973069868969304}
+  - component: {fileID: 5266725779852607774}
   m_Layer: 0
   m_Name: Jarosite
   m_TagString: Untagged
@@ -107,6 +109,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 51368a5ba8a38f740baa9f2a132a2321, type: 3}
+--- !u!114 &5876973069868969304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1299d7f18655f324d8511c7fd83ddd11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Image: {fileID: 21300000, guid: df6e20c7cc6d2e3e98c965e29dfcb1df, type: 3}
+--- !u!114 &5266725779852607774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cd3daaa63586a4e9eeb29c8eff8ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  playerController: {fileID: 524029209791395963, guid: c64494b2e37f4fc44bcd8b7f120f723b, type: 3}
 --- !u!1 &4622150548593688153
 GameObject:
   m_ObjectHideFlags: 0
