@@ -53,6 +53,7 @@
      <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/ThemeEditor/ThemedUI.cs" />
      <Compile Include="Assets/Scripts/QuizManager.cs" />
      <Compile Include="Assets/Inventory/InventoryScripts/ItemDragHandler.cs" />
+     <Compile Include="Assets/SceneChanger.cs" />
      <Compile Include="Assets/Inventory/PickupDrop.cs" />
      <Compile Include="Assets/Inventory/InventoryScripts/ItemClickHandler.cs" />
      <Compile Include="Assets/Assets/Settings/Input/PlayerInput.cs" />
