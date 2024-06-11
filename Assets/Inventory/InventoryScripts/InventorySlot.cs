@@ -51,19 +51,19 @@ public class InventorySlot
         get { return mItemStack.Count;}
     }
 
-    public bool Remove(IInventoryItem item){
-        if(IsEmpty){
-            return false;
-        }
+    // public bool Remove(IInventoryItem item){
+    //     if(IsEmpty){
+    //         return false;
+    //     }
 
-        IInventoryItem first = mItemStack.Peek();
-        if(first.Name == item.Name){
-            mItemStack.Pop();
-            return true;
-        }
+    //     IInventoryItem first = mItemStack.Peek();
+    //     if(first.Name == item.Name){
+    //         mItemStack.Pop();
+    //         return true;
+    //     }
 
-        return false;
-    }
+    //     return false;
+    // }
     // Start is called before the first frame update
     void Start()
     {

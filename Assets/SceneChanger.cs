@@ -9,11 +9,19 @@ public class SceneChanger : MonoBehaviour
         {
             ChangeToLevel1();
         }
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            ChangeToLevel2();
+        }
+
     }
 
     void ChangeToLevel1()
     {
-        Debug.Log("Changing to Level-1");
         SceneManager.LoadScene("Level-1");
+    }
+    void ChangeToLevel2()
+    {
+        SceneManager.LoadScene("Level-2");
     }
 }
