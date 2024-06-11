@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
   - component: {fileID: 6500000}
+  - component: {fileID: 2179934423536349982}
+  - component: {fileID: 2358785163031100344}
   m_Layer: 0
   m_Name: Basalt
   m_TagString: Basalts
@@ -110,6 +112,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.88, y: 1.55, z: 2.63}
   m_Center: {x: 0.08517182, y: 0.06445256, z: -0.25906557}
+--- !u!114 &2179934423536349982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cd3daaa63586a4e9eeb29c8eff8ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  playerController: {fileID: 0}
+--- !u!114 &2358785163031100344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87823b3c1df1f664f885b11f0d5b2521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Image: {fileID: 21300000, guid: 3d42b5ef33689af43a3e6dccb8b02805, type: 3}
 --- !u!1 &255113741538137401
 GameObject:
   m_ObjectHideFlags: 0

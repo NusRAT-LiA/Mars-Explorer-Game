@@ -14,10 +14,10 @@ public class ItemClickHandler : MonoBehaviour {
 
         inventory.UseItem(item);
 
-        if(item != null)
-            {
-                inventory.RemoveItem(item);
-                item.OnDrop();
-            }
+        // if(item != null)
+        //     {
+        //         inventory.RemoveItem(item);
+        //         item.OnDrop();
+        //     }
     }
 }

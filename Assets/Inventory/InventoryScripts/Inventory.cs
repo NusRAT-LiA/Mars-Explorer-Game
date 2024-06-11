@@ -12,7 +12,7 @@ public class Inventory : MonoBehaviour
     private IList<InventorySlot> mSlots = new List<InventorySlot>();
 
     public event EventHandler<InventoryEventArgs> ItemAdded;
-    public event EventHandler<InventoryEventArgs> ItemRemoved;
+    // public event EventHandler<InventoryEventArgs> ItemRemoved;
     public event EventHandler<InventoryEventArgs> ItemUsed;
 
     public Inventory()
@@ -87,34 +87,18 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void RemoveItem(IInventoryItem item)
-    {
-        foreach (InventorySlot slot in mSlots)
-        {
-            if (slot.Remove(item))
-            {
-                if (ItemRemoved != null)
-                {
-                    ItemRemoved(this, new InventoryEventArgs(item));
-                }
-                break;
-            }
-        }
-        // if (mItems.Contains(item))
-        // {
-        //     mItems.Remove(item);
-
-        //     item.OnDrop();
-
-        //     Collider collider = (item as MonoBehaviour).GetComponent<Collider>();
-        //     if (collider != null)
-        //     {
-        //         collider.enabled = true;
-        //     }
-        //     if (ItemRemoved != null)
-        //     {
-        //         ItemRemoved(this, new InventoryEventArgs(item));
-        //     }
-        // }
-    }
+    // public void RemoveItem(IInventoryItem item)
+    // {
+    //     foreach (InventorySlot slot in mSlots)
+    //     {
+    //         if (slot.Remove(item))
+    //         {
+    //             if (ItemRemoved != null)
+    //             {
+    //                 ItemRemoved(this, new InventoryEventArgs(item));
+    //             }
+    //             break;
+    //         }
+    //     }
+    // }
 }
