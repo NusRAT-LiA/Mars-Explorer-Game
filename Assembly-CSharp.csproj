@@ -48,6 +48,7 @@
      <Compile Include="Assets/Inventory/InventoryScripts/Mushroom1.cs" />
      <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Misc/ExtraLinks.cs" />
      <Compile Include="Assets/Scripts/PuzzleManager.cs" />
+     <Compile Include="Assets/Scripts/FinalQuiz.cs" />
      <Compile Include="Assets/Inventory/InventoryScripts/Inventory.cs" />
      <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Audio/CheckSFXVolume.cs" />
      <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/ThemeEditor/ThemedUI.cs" />
