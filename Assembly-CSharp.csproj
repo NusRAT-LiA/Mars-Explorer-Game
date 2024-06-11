@@ -60,6 +60,7 @@
      <Compile Include="Assets/Inventory/ObjectGrabable.cs" />
      <Compile Include="Assets/Inventory/InventoryScripts/WorldItem.cs" />
      <Compile Include="Assets/Inventory/InventoryScripts/PlayerFollow.cs" />
+     <Compile Include="Assets/Assets/Scripts/ShovelController.cs" />
      <Compile Include="Assets/Shop/Scripts/CursorController.cs" />
      <Compile Include="Assets/Inventory/InventoryScripts/HUD.cs" />
      <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Managers/UIMenuManager.cs" />
