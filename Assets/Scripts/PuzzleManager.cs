@@ -9,7 +9,7 @@ public class PuzzleManager : MonoBehaviour
     public GameObject questionPanel;
     public TextMeshProUGUI questionText;
     public TextMeshProUGUI instructionText;
-    public TextMeshProUGUI scoreText;  
+    // public TextMeshProUGUI scoreText;  
     public Button[] optionButtons;
     public AudioClip rightAnswerAudio;
     public AudioClip wrongAnswerAudio;
@@ -173,7 +173,8 @@ public class PuzzleManager : MonoBehaviour
             if (selectedIndex == questions[currentQuestionIndex].correctOption)
             {
                 playerScore += 5;
-                UpdateScoreDisplay();  
+                // UpdateScoreDisplay();  
+                PlayerPrefs.SetInt("PlayerScore", playerScore);
                 audioSource.PlayOneShot(rightAnswerAudio);
                 questions.RemoveAt(currentQuestionIndex);
                 currentQuestionIndex = -1;
@@ -189,7 +190,7 @@ public class PuzzleManager : MonoBehaviour
 
     void UpdateScoreDisplay()
     {
-        scoreText.text = playerScore.ToString();
+        // scoreText.text = playerScore.ToString();
     }
 
     void LevelComplete()

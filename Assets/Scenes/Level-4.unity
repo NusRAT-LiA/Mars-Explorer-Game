@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.044421576, g: 0.03969398, b: 0.04710237, a: 1}
+  m_IndirectSpecularColor: {r: 0.045279227, g: 0.039755728, b: 0.047979034, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8090,7 +8090,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 25.32071, y: -13.5271}
+  m_AnchoredPosition: {x: 25.320679, y: -13.5271}
   m_SizeDelta: {x: -387.9525, y: -271.8094}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &332203441
@@ -9769,7 +9769,6 @@ MonoBehaviour:
   questionPanel: {fileID: 1911711421}
   questionText: {fileID: 183664773}
   instructionText: {fileID: 1580557961}
-  scoreText: {fileID: 113808745}
   optionButtons:
   - {fileID: 1672659117}
   - {fileID: 427097964}
@@ -26823,6 +26822,7 @@ GameObject:
   - component: {fileID: 1645931677}
   - component: {fileID: 1645931679}
   - component: {fileID: 1645931678}
+  - component: {fileID: 1645931680}
   m_Layer: 5
   m_Name: ScorePanel
   m_TagString: Untagged
@@ -26888,6 +26888,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645931676}
   m_CullTransparentMesh: 1
+--- !u!114 &1645931680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645931676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551724b97aec03271b47d44d4959a28a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 113808745}
 --- !u!1 &1672659113
 GameObject:
   m_ObjectHideFlags: 0
