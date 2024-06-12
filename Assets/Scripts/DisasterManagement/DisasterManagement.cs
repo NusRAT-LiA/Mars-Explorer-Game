@@ -13,7 +13,8 @@ public class DisasterManagement : MonoBehaviour
     public float upperRange;
     public float lowerRange;
     public TextMeshProUGUI warningText; 
-    public TextMeshProUGUI gameOverText;  // UI element for game over message
+    public TextMeshProUGUI gameOverText;  
+    private const float disasterDuration = 10f;  // Duration for which the disaster plays
 
     void Awake()
     {
@@ -77,7 +78,7 @@ public class DisasterManagement : MonoBehaviour
     {
         while (true)
         {
-            interval = Random.Range(lowerRange, upperRange); 
+            interval = Random.Range(lowerRange, upperRange);
 
             if (disasterParticleSystem.isPlaying)
             {
@@ -96,23 +97,31 @@ public class DisasterManagement : MonoBehaviour
                     warningText.gameObject.SetActive(true);
                 }
 
-                yield return new WaitForSeconds(5f); 
+                yield return new WaitForSeconds(5f);  // Wait for 5 seconds before starting the disaster
 
                 disasterParticleSystem.Play();
                 if (!audioSource.isPlaying)
                 {
                     audioSource.Play();
                 }
-
-                // Check for player hiding status and display game over message if necessary
+                
                 PlayerHide playerHideScript = FindObjectOfType<PlayerHide>();
                 if (playerHideScript != null && !playerHideScript.prodIsActive)
                 {
                     StartCoroutine(GameOverRoutine());
                 }
+
+                yield return new WaitForSeconds(disasterDuration);  // Play disaster for 10 seconds
+
+                disasterParticleSystem.Stop();
+                audioSource.Stop();
+                if (warningText != null)
+                {
+                    warningText.gameObject.SetActive(false);
+                }
             }
 
-            yield return new WaitForSeconds(interval);  
+            yield return new WaitForSeconds(interval);  // Adjust wait time to exclude the disaster and warning duration
         }
     }
 
