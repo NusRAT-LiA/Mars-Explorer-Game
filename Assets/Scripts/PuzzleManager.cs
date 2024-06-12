@@ -28,7 +28,7 @@ public class PuzzleManager : MonoBehaviour
     {
         audioSource = gameObject.AddComponent<AudioSource>();
 
-        audioSource.PlayOneShot(GenAudio);
+        
 
         // Retrieve the player's score from PlayerPrefs or set it to 0 if not found
         playerScore = PlayerPrefs.GetInt("PlayerScore", 0);
@@ -108,6 +108,7 @@ public class PuzzleManager : MonoBehaviour
         {
             questionPanel.SetActive(false);
             playerController.enabled=true;
+            audioSource.Stop();
 
         }
 
@@ -137,6 +138,7 @@ public class PuzzleManager : MonoBehaviour
         if (questionPanel.activeSelf)
         {
             ShowNextQuestion();
+            audioSource.PlayOneShot(GenAudio);
         }
     }
 
