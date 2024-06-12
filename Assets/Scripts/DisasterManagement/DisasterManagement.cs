@@ -13,6 +13,7 @@ public class DisasterManagement : MonoBehaviour
     public float upperRange;
     public float lowerRange;
     public TextMeshProUGUI warningText; 
+    public TextMeshProUGUI gameOverText;  // UI element for game over message
 
     void Awake()
     {
@@ -61,6 +62,15 @@ public class DisasterManagement : MonoBehaviour
         {
             Debug.LogError("Warning Text UI element not assigned.");
         }
+
+        if (gameOverText != null)
+        {
+            gameOverText.gameObject.SetActive(false);  
+        }
+        else
+        {
+            Debug.LogError("Game Over Text UI element not assigned.");
+        }
     }
 
     IEnumerator ToggleParticleSystem()
@@ -94,15 +104,28 @@ public class DisasterManagement : MonoBehaviour
                     audioSource.Play();
                 }
 
-                // Check for player hiding status and reload scene if necessary
+                // Check for player hiding status and display game over message if necessary
                 PlayerHide playerHideScript = FindObjectOfType<PlayerHide>();
                 if (playerHideScript != null && !playerHideScript.prodIsActive)
                 {
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                    StartCoroutine(GameOverRoutine());
                 }
             }
 
             yield return new WaitForSeconds(interval);  
         }
+    }
+
+    IEnumerator GameOverRoutine()
+    {
+        if (gameOverText != null)
+        {
+            gameOverText.text = "Game Over";
+            gameOverText.gameObject.SetActive(true);
+        }
+
+        yield return new WaitForSeconds(5f);  // Wait for 5 seconds before reloading the scene
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
