@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using TMPro;
+using System.Runtime.InteropServices;
 
 public class QuizManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class QuizManager : MonoBehaviour
     public TextMeshProUGUI instructionText;
     public Button[] optionButtons;
     public int correctOption;
+    private int playerScore;
+    // public TextMeshProUGUI score;
 
 
     private Dictionary<KeyCode, int> keyToOptionIndex;
@@ -51,7 +54,11 @@ public class QuizManager : MonoBehaviour
         if (selectedIndex >= 0 && selectedIndex < optionButtons.Length)
         {
             if (selectedIndex == correctOption)
-            {
+            {   
+                playerScore = PlayerPrefs.GetInt("PlayerScore", 0);
+                playerScore+=2;
+                PlayerPrefs.SetInt("PlayerScore", playerScore);
+                // score.text=playerScore.ToString();
                 instructionText.text = "Right answer.";
                 questionPanel.SetActive(false);
 

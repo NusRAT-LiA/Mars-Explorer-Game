@@ -40,6 +40,7 @@
     <Analyzer Include="/home/lia/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets/PlayerHide.cs" />
      <Compile Include="Assets/Rocks and Boulders 2/Shaders/RotateGameObject.cs" />
      <Compile Include="Assets/Assets/Scripts/Actor.cs" />
      <Compile Include="Assets/Assets/Scripts/PlayerController.cs" />
@@ -52,13 +53,16 @@
      <Compile Include="Assets/Scripts/FinalQuiz.cs" />
      <Compile Include="Assets/Inventory/InventoryScripts/Inventory.cs" />
      <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Audio/CheckSFXVolume.cs" />
+     <Compile Include="Assets/Scripts/ScoreManager.cs" />
      <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/ThemeEditor/ThemedUI.cs" />
      <Compile Include="Assets/Inventory/InventoryScripts/Rock3.cs" />
      <Compile Include="Assets/Scripts/QuizManager.cs" />
      <Compile Include="Assets/Inventory/InventoryScripts/ItemDragHandler.cs" />
      <Compile Include="Assets/SceneChanger.cs" />
+     <Compile Include="Assets/BackgroundMusic.cs" />
      <Compile Include="Assets/Inventory/ToggleInventory.cs" />
      <Compile Include="Assets/Inventory/InventoryScripts/ItemClickHandler.cs" />
+     <Compile Include="Assets/Scripts/DisasterManagement/DisasterManagement.cs" />
      <Compile Include="Assets/Assets/Settings/Input/PlayerInput.cs" />
      <Compile Include="Assets/Inventory/InventoryScripts/InventoryItem.cs" />
      <Compile Include="Assets/Inventory/ObjectGrabable.cs" />
@@ -82,6 +86,7 @@
      <Compile Include="Assets/Inventory/InventoryScripts/Rock2.cs" />
      <Compile Include="Assets/Shop/Scripts/ShopManager.cs" />
      <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Audio/CheckMusicVolume.cs" />
+     <Compile Include="Assets/Scripts/DisasterManagement/DisasterPosition.cs" />
      <Compile Include="Assets/Inventory/InventoryScripts/Rock4.cs" />
      <Compile Include="Assets/Inventory/InventoryScripts/Mushroom2.cs" />
      <Compile Include="Assets/Shop/Scripts/ShopTemplate.cs" />
