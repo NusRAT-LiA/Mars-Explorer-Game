@@ -9,16 +9,31 @@ public class PuzzleManager : MonoBehaviour
     public GameObject questionPanel;
     public TextMeshProUGUI questionText;
     public TextMeshProUGUI instructionText;
+    public TextMeshProUGUI scoreText;  
     public Button[] optionButtons;
+    public AudioClip rightAnswerAudio;
+    public AudioClip wrongAnswerAudio;
+    public AudioClip GenAudio;
+    private AudioSource audioSource;
+    public PlayerController playerController;
 
     private List<Question> questions;
     private int currentQuestionIndex = -1;
-
+    private int playerScore;
     private Dictionary<KeyCode, int> keyToOptionIndex;
     private Dictionary<string, List<Question>> sceneQuestions;
+    private List<string> sceneNames = new List<string> { "Level-1", "Level-2", "Level-3", "Level-4", "Level-5" };
 
     void Start()
     {
+        audioSource = gameObject.AddComponent<AudioSource>();
+
+        audioSource.PlayOneShot(GenAudio);
+
+        // Retrieve the player's score from PlayerPrefs or set it to 0 if not found
+        playerScore = PlayerPrefs.GetInt("PlayerScore", 0);
+        UpdateScoreDisplay();  
+        
         questionPanel.SetActive(false);
 
         keyToOptionIndex = new Dictionary<KeyCode, int>
@@ -45,7 +60,6 @@ public class PuzzleManager : MonoBehaviour
                     new Question("Born from lava's swift freeze, with quartz and feldspar it gleams; scarce alkali, well-grained sheen, in Martian landscapes, it's a dream", new string[] {"1.Basalt", "2.Dacite", "3.Granitoids", "4.Nili Fossae"}, 1),
                     new Question("Through hydrothermal embrace, life's essence may gleam, within these silent depths, a preserved story, unseen", new string[] {"1.Basalt", "2.Dacite", "3.Granitoids", "4.Carbonated Rocks"}, 3),
                     new Question("A treasure trove they found, with carbonate minerals, their mysteries unwound", new string[] {"1.Basalt", "2.Dacite", "3.Granitoids", "4.Nili Fossae"}, 3),
-
                 }
             },
             {
@@ -59,14 +73,10 @@ public class PuzzleManager : MonoBehaviour
                 "Level-4", new List<Question>
                 {
                     new Question("Aqueous whispers in silent stone, where Martian skies once did roam. Minerals aligned in secret tales, within this ancient Martian veil.", new string[] {"1.Jarosite", "2.Sulfates", "3.Carbonates", "4.Hematite"}, 0),
-                    new Question("In rusted hues, I stand with my friends, a testament to time's unending drone. ", new string[] {"1.Jarosite", "2.Sulfates", "3.Hematite Outcrops", "4.Carbonates"}, 2),
-                    new Question("A wanderer from Earth's twilight. Ejected by force, from impact's might, A tale of cosmic collision, in the starry night. ", new string[] {"1.Bounce Rock", "2.Shergottite", "3.Martian Meteorite", "4.Pyroxene"}, 0),
-
+                    new Question("In rusted hues, I stand with my friends, a testament to time's unending drone.", new string[] {"1.Jarosite", "2.Sulfates", "3.Hematite Outcrops", "4.Carbonates"}, 2),
+                    new Question("A wanderer from Earth's twilight. Ejected by force, from impact's might, A tale of cosmic collision, in the starry night.", new string[] {"1.Bounce Rock", "2.Shergottite", "3.Martian Meteorite", "4.Pyroxene"}, 0),
                 }
             }
-            
-
-            // Add more scenes and their questions here
         };
 
         // Load questions for the current scene
@@ -94,6 +104,13 @@ public class PuzzleManager : MonoBehaviour
             ToggleQuestionPanel();
         }
 
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            questionPanel.SetActive(false);
+            playerController.enabled=true;
+
+        }
+
         if (questionPanel.activeSelf)
         {
             if (Input.GetKeyDown(KeyCode.T))
@@ -113,7 +130,8 @@ public class PuzzleManager : MonoBehaviour
     }
 
     void ToggleQuestionPanel()
-    {
+    {   
+        playerController.enabled=false;
         questionPanel.SetActive(!questionPanel.activeSelf);
 
         if (questionPanel.activeSelf)
@@ -125,7 +143,9 @@ public class PuzzleManager : MonoBehaviour
     void ShowNextQuestion()
     {
         if (questions.Count == 0)
-        {
+        {              
+            playerController.enabled=true;
+
             LevelComplete();
             return;
         }
@@ -150,23 +170,47 @@ public class PuzzleManager : MonoBehaviour
         {
             if (selectedIndex == questions[currentQuestionIndex].correctOption)
             {
+                playerScore += 5;
+                UpdateScoreDisplay();  
+                audioSource.PlayOneShot(rightAnswerAudio);
                 questions.RemoveAt(currentQuestionIndex);
                 currentQuestionIndex = -1;
                 ShowNextQuestion();
             }
             else
             {
+                audioSource.PlayOneShot(wrongAnswerAudio);
                 instructionText.text = "Wrong answer. Try again or press T to skip.";
             }
         }
     }
 
+    void UpdateScoreDisplay()
+    {
+        scoreText.text = playerScore.ToString();
+    }
+
     void LevelComplete()
     {
         questionPanel.SetActive(false);
-        // Update the level here
+        PlayerPrefs.SetInt("PlayerScore", playerScore);
+
+        string currentSceneName = SceneManager.GetActiveScene().name;
+
+        int currentIndex = sceneNames.IndexOf(currentSceneName);
+
+        if (currentIndex != -1 && currentIndex + 1 < sceneNames.Count)
+        {
+            string nextSceneName = sceneNames[currentIndex + 1];
+            SceneManager.LoadScene(nextSceneName);
+        }
+        else
+        {
+            Debug.Log("No more levels. Game completed!");
+        }
     }
 }
+
 
 [System.Serializable]
 public class Question
