@@ -3362,8 +3362,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   disasterPrefab: {fileID: 445641030}
   gameMusic: {fileID: 0}
-  upperRange: 16
-  lowerRange: 15
+  upperRange: 90
+  lowerRange: 70
   warningText: {fileID: 1802108466}
   gameOverText: {fileID: 1673534060}
 --- !u!199 &445641033

@@ -14,7 +14,7 @@ public class DisasterManagement : MonoBehaviour
     public float lowerRange;
     public TextMeshProUGUI warningText; 
     public TextMeshProUGUI gameOverText;  
-    private const float disasterDuration = 10f;  // Duration for which the disaster plays
+    private const float disasterDuration = 10f;  
 
     void Awake()
     {
@@ -97,7 +97,7 @@ public class DisasterManagement : MonoBehaviour
                     warningText.gameObject.SetActive(true);
                 }
 
-                yield return new WaitForSeconds(5f);  // Wait for 5 seconds before starting the disaster
+                yield return new WaitForSeconds(5f);  
 
                 disasterParticleSystem.Play();
                 if (!audioSource.isPlaying)
@@ -111,7 +111,7 @@ public class DisasterManagement : MonoBehaviour
                     StartCoroutine(GameOverRoutine());
                 }
 
-                yield return new WaitForSeconds(disasterDuration);  // Play disaster for 10 seconds
+                yield return new WaitForSeconds(disasterDuration);  
 
                 disasterParticleSystem.Stop();
                 audioSource.Stop();
@@ -121,7 +121,7 @@ public class DisasterManagement : MonoBehaviour
                 }
             }
 
-            yield return new WaitForSeconds(interval);  // Adjust wait time to exclude the disaster and warning duration
+            yield return new WaitForSeconds(interval);  
         }
     }
 

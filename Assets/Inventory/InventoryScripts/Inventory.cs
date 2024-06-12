@@ -6,14 +6,13 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     private const int SLOTS = 9;
-    //
     public List<IInventoryItem> mItems = new List<IInventoryItem>();
 
     private IList<InventorySlot> mSlots = new List<InventorySlot>();
 
     public event EventHandler<InventoryEventArgs> ItemAdded;
-    // public event EventHandler<InventoryEventArgs> ItemRemoved;
     public event EventHandler<InventoryEventArgs> ItemUsed;
+    public int itemCount = 0;
 
     public Inventory()
     {
@@ -32,7 +31,7 @@ public class Inventory : MonoBehaviour
                 return slot;
             }
         }
-        return null; // Move the return statement outside the loop
+        return null; 
     }
     private InventorySlot FindNextEmptySlot()
     {
@@ -43,7 +42,7 @@ public class Inventory : MonoBehaviour
                 return slot;
             }
         }
-        return null; // Move the return statement outside the loop
+        return null; 
     }
 
     public void AddItem(IInventoryItem item)
@@ -54,6 +53,8 @@ public class Inventory : MonoBehaviour
         if (freeSlot == null)
         {
             freeSlot = FindNextEmptySlot();
+            itemCount++;
+            Debug.Log(itemCount);
         }
         if (freeSlot != null)
         {
@@ -64,19 +65,6 @@ public class Inventory : MonoBehaviour
                 ItemAdded(this, new InventoryEventArgs(item));
             }
         }
-        // if (mItems.Count < SLOTS) {
-        //     Collider collider = (item as MonoBehaviour).GetComponent<Collider>();
-        //     if(collider.enabled){
-        //         collider.enabled = false;
-        //         mItems.Add(item);
-        //         item.OnPickup();
-
-        //         if(ItemAdded != null){
-        //             Debug.Log(this);
-        //             ItemAdded(this, new InventoryEventArgs(item));
-        //         }
-        //     }
-        // }
     }
 
     internal void UseItem(IInventoryItem item)
@@ -86,19 +74,4 @@ public class Inventory : MonoBehaviour
             ItemUsed(this, new InventoryEventArgs(item));
         }
     }
-
-    // public void RemoveItem(IInventoryItem item)
-    // {
-    //     foreach (InventorySlot slot in mSlots)
-    //     {
-    //         if (slot.Remove(item))
-    //         {
-    //             if (ItemRemoved != null)
-    //             {
-    //                 ItemRemoved(this, new InventoryEventArgs(item));
-    //             }
-    //             break;
-    //         }
-    //     }
-    // }
 }
